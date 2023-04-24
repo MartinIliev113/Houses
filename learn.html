@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="learn.css" />
+    <title>Document</title>
+       <script>
+      function myFunction(smallImg) {
+        var fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1> Our Houses for Sale</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="house">
+      <div class="house-small-img">
+        <img src="house1.jpg" onclick="myFunction(this)" />
+        <img src="house2.jpg" onclick="myFunction(this)" />
+        <img src="house3.jpg" onclick="myFunction(this)" />
+        <img src="house4.jpg" onclick="myFunction(this)" />
+        <img src="house5.jpg" onclick="myFunction(this)" />
+        <img src="house6.jpg" onclick="myFunction(this)" />
+        <img src="house6.jpg" onclick="myFunction(this)" />
+      </div>
+      <div class="img-container">
+        <img id="imageBox" src="house1.jpg" />
+      </div>
+
+      <div class="house-info">
+        <h2>Къща в с.Оброчище, обл. Добрич</h2>
+        <br>
+        
+        <p> Предлагам за продажба атрактивна двуетажна къща с БАСЕЙН. 
+          Къщата е разположена в тихия и спокоен район на с.
+           Оброчище - само на 30 км от центъра на гр. Варна.
+            От имота се стига много бързо до плажовете на Албена, Кранево и Балчик.
+             Разгърнатата застроена площ на къщата е 164 кв.м (ЗП - 82 кв.м), а прилежащото дворно място е с площ от 500 кв.м. На 1-вия етаж са разположени: светла просторна дневна с кухня и трапезария (с вградени електроуреди - готварска печка, хладилник, миялна машина), веранда и тоалетна. На 2-рия етаж са разположени: 3 спални, 2 бани с тоалетни (като едната е прилежаща към едната спалня), коридор и 2 тераси с красива ПАНОРАМА. Към имота принадлежи и гараж с площ от 24 кв.м. Къщата разполага с охранителна система (СОТ), има кабелна телевизия към Булсатком. Отоплението се извършва посредством 4 климатика - по 1 във всяка от стаите, поставена е външна изолация. Дворът е добре поддържан, посадени са декоративни дръвчета и храсти, сложена е система за напояване, изградено е барбекю. Агенция Живена извършва необходимите проверки на имота, който сте избрали, организира всички етапи на сделката до нейното финализиране. Оказваме съдействие за отпускане на банков кредит..</p>
+      </div>
+    </div>
+    
+
+    
+
+   
+    <footer>
+      
+      <div class="footer-container">
+        <div class="footer-section">
+        <h3>Location</h3>
+        <p>123 Main Street, City, State ZIP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.936336955771!2d-122.40827178463487!3d37.78009897975282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807079d7b76f%3A0xf4d27b1ad0ecad01!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1649274348586!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-section">
+        <h3>Phone</h3>
+        <p>(123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+        <h3>Social Media</h3>
+        <ul>  
+              <li><a href="https://www.facebook.com/"><img src="facebook.png" ></a></li>
+              <li><a href="https://www.instagram.com/"><img src="logo-ig-png-32464.png" ></a></li>
+             
+        </ul>
+        </div>
+      </div>
+    
+      
+    <p>&copy; 2023 Our Houses for Sale. All rights reserved.</p>
+  </footer>
+ 
+  </body>
+</html>

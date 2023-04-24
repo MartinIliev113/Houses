@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Нова двуетажна къща с прекрасна панорам</title>
+  <link rel="stylesheet" href="learmMore.css">
+  <script>
+    function myFunction(smallImg) {
+      var fullImg = document.getElementById("imageBox");
+      fullImg.src = smallImg.src;
+    }
+  </script>
+</head>
+<body>
+
+	<header>
+		<h1>
+      <img src="logo.png" alt="Logo" class="logo">
+      Къщите</h1>
+	</header>
+	<nav>
+    <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="about.html">За нас</a></li>
+        <li><a href="prodai.html">Продай къща</a></li>
+        <li><a href="contact.html">Свържете се с нас</a></li>
+        <li><a href="otzivi.html">Отзиви</a></li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <div class="big-img">
+      <img id="imageBox" src="https://www.alo.bg/user_files/l/lana66/8696751_123070438_big.jpg" alt="Big House Image">
+    </div>
+    <div class="info">
+      <h1>Нова двуетажна къща с прекрасна панорама</h1>
+      <p> Kъща на три етажа в село Рогачево, което е разположено 28 км северно от гр. Варна и известния летен курорт Златни Пясъци.
+
+        Първи етаж - входно антре, баня-тоалет, перално помещение, голяма дневна с кухня и веранда с излаз към дворно място и барбекю зона
+Втори етаж - коридор, две спални, баня и тоалет, панорамна тераса
+Избено помещение 20 кв.м.
+Къщата е качествено строителство, окабеляване за интернет и TV
+Имотът е напълно подходящ за целогодишно живеене
+Дворно място е озеленено и поддържано с насаждения от плодови дръвчета и цветя
+с. Близнаци на 20 км от центъра на Варна и на 3 км от плажа и морето до курорт Камчия
+В селото има училище, ресторанти, магазини, полиция, здравна служба, отлична инфраструктура.</p>
+        <br>
+      <h2> Цена:234 900  €</h2>
+    </div>
+    <div class="small-imgs">
+      <img src="https://www.alo.bg/user_files/l/lana66/8696751_123070438_big.jpg" onclick="myFunction(this)">
+      <img src="https://www.alo.bg/user_files/l/lana66/8696751_123070442_medium.jpg" onclick="myFunction(this)">
+      <img src="https://www.alo.bg/user_files/l/lana66/8696751_123070435_medium.jpg" onclick="myFunction(this)">
+      <img src="https://www.alo.bg/user_files/l/lana66/8696751_123070437_medium.jpg" onclick="myFunction(this)">
+      <img src="https://www.alo.bg/user_files/l/lana66/8696751_123070434_big.jpg" onclick="myFunction(this)">
+      <img src="https://www.alo.bg/user_files/l/lana66/8696751_123070440_big.jpg" onclick="myFunction(this)">
+    </div>
+  </div>
+</body>
+    <footer>
+      
+
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Location</h3>
+          <p>123 Main Street, City, State ZIP</p>
+          <iframe src="https://maps.google.com/maps?q=Варна&t=&z=19&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-section">
+          <h3>Phone</h3>
+          <p>(123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+          <h3>Social Media</h3>
+          <ul>  
+                    <li><a href="https://www.facebook.com/"><img src="facebook.png" ></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="logo-ig-png-32464.png" ></a></li>
+                   
+          </ul>
+        </div>
+      </div>
+  
+    </footer>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Къща – Евксиноград</title>
+  <link rel="stylesheet" href="learmMore.css">
+  <script>
+    function myFunction(smallImg) {
+      var fullImg = document.getElementById("imageBox");
+      fullImg.src = smallImg.src;
+    }
+  </script>
+</head>
+<body>
+
+    <header>
+		<h1>
+      <img src="logo.png" alt="Logo" class="logo">
+      Къщите</h1>
+	</header>
+	<nav>
+    <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="about.html">За нас</a></li>
+        <li><a href="prodai.html">Продай къща</a></li>
+        <li><a href="contact.html">Свържете се с нас</a></li>
+        <li><a href="otzivi.html">Отзиви</a></li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <div class="big-img">
+      <img id="imageBox" src="house2.jpg" alt="Big House Image">
+    </div>
+    <div class="info">
+      <h1>Къща – Евксиноград</h1>
+      <p>Къща на два етажа с разпределение, както следва:
+        Първи етаж 112кв.м. – състои се от: входно антре, просторен и слънчев дневен тракт 78кв.м. с френски прозорци и камина, стълбище към втори етаж, баня с тоалетна 8,5кв.м., кабинет/спалня 14кв.м.
+        Втори етаж 112кв.м. – баня с тоалетна 9кв.м., три спални: 15кв.м., 16кв.м. и 33кв.м. родителската спалня е със собствена баня.
+        Височината на таваните е както следва:
+        Първи етаж – 3,20 метра; втори етаж – 2,90 метра. Към имота са предвидени четири паркоместа, а при желание може да се построи гараж и басейн.
+        Отопление ще бъде решено по желание на клиента.
+        Имота ще бъде построен с най-висок клас строителни материали и завършен по БДС. Има възможност за завършване до ключ. Възможно преустройство спрямо желанията на клиента!
+        Схема на плащане:
+        70% груб строеж / готовност – януари 2023 година.
+        20% готова фасада.
+        10% разрешение за ползване /готовност- пролет 2023 година.</p>
+        <br>
+      <h2> Цена:395 000 €</h2>
+    </div>
+    <div class="small-imgs">
+      <img src="house2.jpg" onclick="myFunction(this)">
+      <img src="https://imotstatic2.focus.bg/imot/photosimotbg/1/181/big/1j166435836797181_Xs.jpg" onclick="myFunction(this)">
+      <img src="https://imotstatic2.focus.bg/imot/photosimotbg/1/181/big/1j166435836797181_HA.jpg" onclick="myFunction(this)">
+      <img src="https://imotstatic2.focus.bg/imot/photosimotbg/1/181/big/1j166435836797181_Tz.jpg" onclick="myFunction(this)">
+      <img src="https://imotstatic2.focus.bg/imot/photosimotbg/1/181/big/1j166435836797181_Xt.jpg" onclick="myFunction(this)">
+      <img src="https://imotstatic2.focus.bg/imot/photosimotbg/1/181/big/1j166435836797181_kx.jpg" onclick="myFunction(this)">
+    </div>
+  </div>
+</body>
+    <footer>
+      
+ 
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Location</h3>
+          <p>123 Main Street, City, State ZIP</p>
+          <iframe src="https://maps.google.com/maps?q=Варна&t=&z=19&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="footer-section">
+          <h3>Phone</h3>
+          <p>(123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+          <h3>Social Media</h3>
+          <ul>  
+                    <li><a href="https://www.facebook.com/"><img src="facebook.png" ></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="logo-ig-png-32464.png" ></a></li>
+                   
+          </ul>
+        </div>
+      </div>
+  
+
+</html>

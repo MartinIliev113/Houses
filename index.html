@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Къщите</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+    <script>
+    const proxyUrl = 'https://cors.bridged.cc/';
+const apiUrl = 'https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY';
+
+async function translatePage() {
+  const textElements = document.querySelectorAll('body *:not(script)');
+  const textArray = [];
+  textElements.forEach(element => {
+    textArray.push(element.innerText);
+  });
+  const textToTranslate = textArray.join('\n');
+  const response = await fetch(proxyUrl + apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      q: textToTranslate,
+      source: 'auto',
+      target: 'en'
+    })
+  });
+  const data = await response.json();
+  const translatedText = data.data.translations[0].translatedText;
+  const translatedArray = translatedText.split('\n');
+  textElements.forEach((element, index) => {
+    element.innerText = translatedArray[index];
+  });
+}
+
+const translateButton = document.createElement('button');
+translateButton.innerText = 'Translate to English';
+translateButton.addEventListener('click', translatePage);
+
+document.body.prepend(translateButton);
+
+    </script>
+		<h1>
+      <img src="logo.png" alt="Logo" class="logo">
+      Къщите</h1>
+	</header>
+	<nav>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="about.html">За нас</a></li>
+            <li><a href="prodai.html">Продай къща</a></li>
+            <li><a href="contact.html">Свържете се с нас</a></li>
+            <li><a href="otzivi.html">Отзиви</a></li>
+            <button onclick="translatePage()">Translate</button>
+        </ul>
+    </nav>
+
+	<div class="container">
+		<div class="house">
+			<img src="house1.jpg" alt="House 1">
+			<h2>Двуетажна къща в кв. Галата</h2>
+			<p>
+                <h3>Цена:237 500 €</h3>
+                Къща в затворен комплекс, състоящ се от 3 къщи и кокетна сграда с апартаменти в озеленен и спокоен район в квартал Галата. Комплексът е разположен само на на 1 км от плажната ивица, 8 км от центъра, 12 км от летището, 9 км от пристанището.
+                
+                Първи етаж: просторна дневна с кухненска част, тоалетна, излаз към отлично поддържана и озеленена градина.
+                Втори етаж: 3 спални, 2 бани, 2 тераси.
+                
+                </p>
+        
+			<a href="house1.html">Научете повече</a>
+		</div>
+		<div class="house">
+			<img src="house2.jpg" alt="House 2">
+			<h2>Къща в Евксиноград, Област Варна</h2>
+			<p>
+                <h3>Цена:234 900 €</h3>
+                Къща на два етажа с разпределение, както следва:
+                Първи етаж 112кв.м. – състои се от: входно антре, просторен и слънчев дневен тракт 78кв.м. с френски прозорци и камина, стълбище към втори етаж, баня с тоалетна 8,5кв.м., кабинет/спалня 14кв.м.
+                Втори етаж 112кв.м. – баня с тоалетна 9кв.м., три спални: 15кв.м., 16кв.м. и 33кв.м. родителската спалня е със собствена баня.
+              </p>
+			<a href="house2.html">Научете повече</a>
+		</div>
+		<div class="house">
+			<img src="house3.jpg" alt="House 3">
+			<h2>Градска Къща над Възраждане</h2>
+			<p>   <h3>Цена:237 500 €</h3>
+                 Новопостроена градска къща с 4 спални и РЗП 165кв.м. Разпределени на три нива по 55кв.м, първо ниво дневна, антре килер и тоалет на второ и трето ниво спални 17 и 12кв.м. с баня. Към къщата има панорамна веранда и таванско помещение които не са включени в квадратурата, паркоместа и двор. намира се на 250м от бул Трети Март в имот с изключителна панорама към града и залива.</p>
+			<a href="house3.html">Научете повече</a>
+	</div>
+    <div class="house">
+        <img src="https://www.alo.bg/user_files/l/lana66/8696751_123070438_big.jpg" alt="House 3">
+        <h2>Нова двуетажна къща с прекрасна панорама</h2>
+        <p>
+            <h3>Цена:234 900 €</h3>
+          <p>Първи етаж - входно антре, баня-тоалет, перално помещение, голяма дневна с кухня и веранда с излаз към дворно място и барбекю зона
+            Втори етаж - коридор, две спални, баня и тоалет, панорамна тераса
+            Избено помещение 20 кв.м.
+            Къщата е качествено строителство, окабеляване за интернет и TV
+            Имотът е напълно подходящ за целогодишно живеене</p>
+        <a href="house4.html">Научете повече</a>
+    </div>
+    <div class="house">
+        <img src="house5.jpg" alt="House 3">
+        <h2>Триетажна къща в с. Рогачево</h2>
+        <p>  <h3>Цена:234 900 €</h3>
+          Kъща на три етажа в село Рогачево, което е разположено 28 км северно от гр. Варна и известния летен курорт Златни Пясъци.
+
+          Къщата с обща площ от 270 кв.м. е със следното разпределение:
+          Първо ниво: Просторна дневна, отделна кухня, баня с тоалетна.
+          Второ ниво: 3 спални, тоалетна с перално поменщение, баня.
+          Трето ниво: 3 спални, баня с тоалетна.</p>
+        <a href="house5.html">Научете повече</a>
+    </div>
+    <div class="house">
+        <img src="house6.jpg" alt="House 3">
+        <h2>Къща в с.Оброчище, обл. Добрич</h2>
+        <p>
+            <h3>Цена:147 500 €</h3>
+            <p>Атрактивна двуетажна къща с БАСЕЙН. Къщата е разположена в тихия и спокоен район на с. Оброчище - само на 30 км от центъра на гр. Варна. От имота се стига много бързо до плажовете на Албена, Кранево и Балчик. Разгърнатата застроена площ на къщата е 164 кв.м (ЗП - 82 кв.м), а прилежащото дворно място е с площ от 500 кв.м.</p>
+        <a href="house6.html">Научете повече</a>
+    </div>
+</div>
+
+	<footer>
+      
+            <div class="footer-container">
+              <div class="footer-section">
+                <h3>Location</h3>
+                <p>123 Main Street, City, State ZIP</p>
+                <iframe src="https://maps.google.com/maps?q=Варна&t=&z=19&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <div class="footer-section">
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+              </div>
+              <div class="footer-section">
+                <h3>Social Media</h3>
+                <ul>  
+                          <li><a href="https://www.facebook.com/"><img src="facebook.png" ></a></li>
+                          <li><a href="https://www.instagram.com/"><img src="logo-ig-png-32464.png" ></a></li>
+                         
+                </ul>
+              </div>
+            </div>
+        
+          
+		<p>&copy; 2023 Къщите.</p>
+	</footer>
+</body>
+</html>
