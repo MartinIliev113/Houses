@@ -7,43 +7,6 @@
 </head>
 <body>
 	<header>
-    <script>
-    const proxyUrl = 'https://cors.bridged.cc/';
-const apiUrl = 'https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY';
-
-async function translatePage() {
-  const textElements = document.querySelectorAll('body *:not(script)');
-  const textArray = [];
-  textElements.forEach(element => {
-    textArray.push(element.innerText);
-  });
-  const textToTranslate = textArray.join('\n');
-  const response = await fetch(proxyUrl + apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      q: textToTranslate,
-      source: 'auto',
-      target: 'en'
-    })
-  });
-  const data = await response.json();
-  const translatedText = data.data.translations[0].translatedText;
-  const translatedArray = translatedText.split('\n');
-  textElements.forEach((element, index) => {
-    element.innerText = translatedArray[index];
-  });
-}
-
-const translateButton = document.createElement('button');
-translateButton.innerText = 'Translate to English';
-translateButton.addEventListener('click', translatePage);
-
-document.body.prepend(translateButton);
-
-    </script>
 		<h1>
       <img src="logo.png" alt="Logo" class="logo">
       Къщите</h1>
@@ -55,7 +18,6 @@ document.body.prepend(translateButton);
             <li><a href="prodai.html">Продай къща</a></li>
             <li><a href="contact.html">Свържете се с нас</a></li>
             <li><a href="otzivi.html">Отзиви</a></li>
-            <button onclick="translatePage()">Translate</button>
         </ul>
     </nav>
 
