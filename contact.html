@@ -11,15 +11,40 @@
       <img src="logo.png" alt="Logo" class="logo">
       Къщите</h1>
 	</header>
-	<nav>
-        <ul>
-            <li><a href="index.html">Начало</a></li>
-            <li><a href="about.html">За нас</a></li>
-            <li><a href="prodai.html">Продай къща</a></li>
-            <li><a href="contact.html">Свържете се с нас</a></li>
-            <li><a href="otzivi.html">Отзиви</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Начало</a></li>
+      <li><a href="about.html">За нас</a></li>
+      <li><a href="prodai.html">Продай къща</a></li>
+      <li><a href="contact.html">Свържете се с нас</a></li>
+      <li><a href="otzivi.html">Отзиви</a></li>
+    
+        <p id="clock" class="clock"></p>
+      
+    </ul>
+  </nav>
+  
+        <script>
+function updateClock() {
+  const clockElement = document.getElementById('clock');
+  const currentDate = new Date();
+  const daysOfWeek = ['Неделя', 'Понеделник', 'Вторник', 'Сряда', 'Четвъртък', 'Петък', 'Събота'];
+  const monthsOfYear = ['Януари', 'Февруари', 'Март', 'Април', 'Май', 'Юни', 'Юли', 'Август', 'Септември', 'Октомври', 'Ноември', 'Декември'];
+  const dayOfWeek = daysOfWeek[currentDate.getDay()];
+  const date = currentDate.getDate();
+  const month = monthsOfYear[currentDate.getMonth()];
+  const year = currentDate.getFullYear();
+  const hours = currentDate.getHours().toString().padStart(2, '0');
+  const minutes = currentDate.getMinutes().toString().padStart(2, '0');
+  const seconds = currentDate.getSeconds().toString().padStart(2, '0');
+  const clockHTML = `${dayOfWeek}, ${date} ${month} ${year} ${hours}:${minutes}:${seconds}`;
+  clockElement.innerHTML = clockHTML;
+}
+
+
+setInterval(updateClock, 1000);
+updateClock();
+        </script>
 
 	<div class="container">
 		<h2>Свържете се с нас</h2>

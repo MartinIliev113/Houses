@@ -10,27 +10,53 @@
       <img src="logo.png" alt="Logo" class="logo">
       Къщите</h1>
 	</header>
-	<nav>
-        <ul>
-            <li><a href="index.html">Начало</a></li>
-            <li><a href="about.html">За нас</a></li>
-            <li><a href="prodai.html">Продай къща</a></li>
-            <li><a href="contact.html">Свържете се с нас</a></li>
-            <li><a href="otzivi.html">Отзиви</a></li>
-        </ul>
-    </nav>
-	<main>
-		<div class="testimonial">
-			<img src="testimonial1.jpg" alt="Client Photo">
-			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo, quam id commodo bibendum, elit nunc aliquet elit, sed lobortis sapien risus non ante. Pellentesque euismod, quam sed efficitur fringilla, nibh odio vestibulum magna, vitae dictum sapien nisi ut orci."</p>
-			<p class="client-name">- John Doe, Home Buyer</p>
-		</div>
-		<div class="testimonial">
-			<img src="testimonial2.jpg" alt="Client Photo">
-			<p>"Vestibulum commodo, quam id commodo bibendum, elit nunc aliquet elit, sed lobortis sapien risus non ante. Pellentesque euismod, quam sed efficitur fringilla, nibh odio vestibulum magna, vitae dictum sapien nisi ut orci."</p>
-			<p class="client-name">- Jane Smith, Home Seller</p>
-		</div>
-	</main>
+  <nav>
+    <ul>
+      <li><a href="index.html">Начало</a></li>
+      <li><a href="about.html">За нас</a></li>
+      <li><a href="prodai.html">Продай къща</a></li>
+      <li><a href="contact.html">Свържете се с нас</a></li>
+      <li><a href="otzivi.html">Отзиви</a></li>
+    
+        <p id="clock" class="clock"></p>
+      
+    </ul>
+  </nav>
+  
+        <script>
+function updateClock() {
+  const clockElement = document.getElementById('clock');
+  const currentDate = new Date();
+  const daysOfWeek = ['Неделя', 'Понеделник', 'Вторник', 'Сряда', 'Четвъртък', 'Петък', 'Събота'];
+  const monthsOfYear = ['Януари', 'Февруари', 'Март', 'Април', 'Май', 'Юни', 'Юли', 'Август', 'Септември', 'Октомври', 'Ноември', 'Декември'];
+  const dayOfWeek = daysOfWeek[currentDate.getDay()];
+  const date = currentDate.getDate();
+  const month = monthsOfYear[currentDate.getMonth()];
+  const year = currentDate.getFullYear();
+  const hours = currentDate.getHours().toString().padStart(2, '0');
+  const minutes = currentDate.getMinutes().toString().padStart(2, '0');
+  const seconds = currentDate.getSeconds().toString().padStart(2, '0');
+  const clockHTML = `${dayOfWeek}, ${date} ${month} ${year} ${hours}:${minutes}:${seconds}`;
+  clockElement.innerHTML = clockHTML;
+}
+
+
+setInterval(updateClock, 1000);
+updateClock();
+        </script>
+<main>
+  <div class="testimonial">
+      <img src="testimonial1.jpg" alt="Снимка на клиент">
+      <p> "Процесът на търсене и закупуване на имот през уебсайта беше много лесен и удобен. Препоръчвам ви на всеки, който иска да си намери нов дом!"</p>
+      <p class="client-name">- Иван Петров, клиент закупил  имот</p>
+  </div>
+  <div class="testimonial">
+      <img src="testimonial2.jpg" alt="Снимка на клиент">
+      <p>"Продадох своя имот бързо и лесно благодарение на този агенцията. Препоръчвам я на всеки, който продава имот."</p>
+      <p class="client-name">- Мария Иванова, клиент  продал  имот</p>
+  </div>
+</main>
+
     <footer>
       
         <div class="footer-container">

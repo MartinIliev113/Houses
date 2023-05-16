@@ -45,6 +45,15 @@ nav a {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.clock{
+
+
+ position: Absolute; top: 0px; 
+ right: 10px;
+ color: yellow;
+ 
+
+}
 
 nav a:hover {
 	background-color: #333;
