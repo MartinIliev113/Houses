@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Post Your Property - My Real Estate Website</title>
+	<title>Продай своя имот</title>
 	<link rel="stylesheet" href="post-property.css">
 </head>
 <body>
 	<header>
 		<h1>
       <img src="logo.png" alt="Logo" class="logo">
-      Къщите</h1>
+      Къщите 22</h1>
 	</header>
   <nav>
-    <ul>
-      <li><a href="index.html">Начало</a></li>
-      <li><a href="about.html">За нас</a></li>
-      <li><a href="prodai.html">Продай къща</a></li>
-      <li><a href="contact.html">Свържете се с нас</a></li>
-      <li><a href="otzivi.html">Отзиви</a></li>
-    
-        <p id="clock" class="clock"></p>
-      
-    </ul>
-  </nav>
+		<ul>
+		  <li><a href="index.html">Начало</a></li>
+		  <li><a href="about.html">За нас</a></li>
+		  <li><a href="post.html">Продай къща</a></li>
+		  <li><a href="contact.html">Свържете се с нас</a></li>
+		  <li><a href="review.html">Отзиви</a></li>
+		
+			<p id="clock" class="clock"></p>
+		  
+		</ul>
+	  </nav>
   
         <script>
 function updateClock() {
@@ -48,51 +48,45 @@ updateClock();
 		<form action="#" method="POST">
 			<label for="property-type">Property Type:</label>
 			<select id="property-type" name="property-type">
-				<option value="house">House</option>
-				<option value="apartment">Apartment</option>
-				<option value="condo">Condo</option>
+				<option value="house">Къща</option>
+				<option value="apartment">Апрартамент</option>
 			</select>
 
-			<label for="property-address">Property Address:</label>
+			<label for="property-address">Адрес:</label>
 			<input type="text" id="property-address" name="property-address" required>
 
-			<label for="property-description">Property Description:</label>
+			<label for="property-description">Описание:</label>
 			<textarea id="property-description" name="property-description" rows="5" required></textarea>
 
-			<label for="property-price">Asking Price:</label>
+			<label for="property-price">Искана цена:</label>
 			<input type="number" id="property-price" name="property-price" required>
 
-			<label for="property-photo">Property Photo:</label>
+			<label for="property-photo">Снимки:</label>
 			<input type="file" id="property-photo" name="property-photo" accept="image/*" required>
 
 			<input type="submit" value="Post Property">
 		</form>
 	</main>
 	<footer>
-      
-  
         <div class="footer-container">
             <div class="footer-section">
-              <h3>Location</h3>
-              <p>123 Main Street, City, State ZIP</p>
+              <h3>Местоположение</h3>
+              <p>бул Сливница 22, Варна</p>
               <iframe src="https://maps.google.com/maps?q=Варна&t=&z=19&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="footer-section">
-              <h3>Phone</h3>
-              <p>(123) 456-7890</p>
+              <h3>Телефон</h3>
+              <p>0888 888 888</p>
             </div>
             <div class="footer-section">
-              <h3>Social Media</h3>
+              <h3>Намерете ни в социялните мрежи:</h3>
               <ul>  
                         <li><a href="https://www.facebook.com/"><img src="facebook.png" ></a></li>
                         <li><a href="https://www.instagram.com/"><img src="logo-ig-png-32464.png" ></a></li>
-                       
               </ul>
             </div>
           </div>
-      
-      
-    <p>&copy; 2023 Къщите.</p>
+        <p>&copy; 2023 Къщите22.</p>
 </footer>
 </body>
 </html>
