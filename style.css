@@ -1,13 +1,13 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
   
   .container {
     display: flex;
@@ -82,7 +82,7 @@ header h1 {
 nav {
 	background-color: #4CAF50;
 	position: relative;
-	z-index: 1;
+
 }
 
 nav ul {
@@ -105,8 +105,7 @@ nav a {
 }
 .clock{
 
-
- position: Absolute; top: 0px; 
+ position: Absolute; 
  right: 10px;
  color: yellow;
  
